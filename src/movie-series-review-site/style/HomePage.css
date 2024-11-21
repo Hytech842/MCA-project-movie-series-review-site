@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+CCarousel{
+    display: flex;
+}
+.poster{
+    width: 800px;
+    height: 400px;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.CCard{
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
