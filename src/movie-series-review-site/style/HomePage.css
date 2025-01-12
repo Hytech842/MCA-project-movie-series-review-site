@@ -8,13 +8,26 @@ CCarousel{
     width: 800px;
     height: 400px;
 }
-.card-container{
+/* .card-container{
     display: flex;
     justify-content: space-around;
 }
 .CCard{
+    width: 12rem;
     padding: 16px;
     border: 1px solid #ccc;
     border-radius: 8px;
     text-align: center;
-}
+} */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 6 cards in a row */
+    gap: 16px; /* Add space between cards */
+    justify-items: center; /* Center the cards horizontally */
+    padding: 16px; /* Add some padding around the container */
+  }
+  
+  .text-center {
+    text-align: center; /* Ensure text is centered within cards */
+  }
+  

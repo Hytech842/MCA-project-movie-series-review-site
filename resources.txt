@@ -3,3 +3,8 @@ registration form
 https://mdbootstrap.com/docs/react/extended/registration-form/
 form no. 4
 
+UI design
+https://movies.fidalgo.dev/discover/Popular
+
+reddit source
+https://www.reddit.com/r/webdev/comments/b5aule/movie_library_with_react_1st_real_project_with/

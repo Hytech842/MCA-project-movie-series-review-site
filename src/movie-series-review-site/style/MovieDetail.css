@@ -1,0 +1,36 @@
+.movie-detail-container {
+    padding: 20px;
+  }
+  
+  .movie-detail-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .movie-poster {
+    flex: 1;
+    max-width: 300px; /* Adjust based on the desired size of the poster */
+  }
+  
+  .movie-poster img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .movie-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .movie-details h2 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .movie-details p {
+    font-size: 1rem;
+  }
+  
