@@ -30,9 +30,10 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home movies={movies} />} />
+          <Route path="index" element={<Home movies={movies} />} />
           <Route path="/movies/:movieId" element={<MovieDetail />} />
-          <Route path="/RegistrationForm" element={<RegistrationForm />} />
+          {/* <Route path="/RegistrationForm" element={<RegistrationForm />} /> */}
+          <Route path="/" element={<RegistrationForm />} />
         </Routes>
       </BrowserRouter>
     </div>
