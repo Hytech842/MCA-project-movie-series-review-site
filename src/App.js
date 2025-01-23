@@ -10,30 +10,29 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchMovies = async () => {
-      try {
-        const data = await fetchFromAPI('movie/popular');
-        setMovies(data.results || []);
-      } catch (err) {
-        setError('Failed to fetch movies');
-      }
-    };
+  // useEffect(() => {
+  //   const fetchMovies = async () => {
+  //     try {
+  //       const data = await fetchFromAPI('movie/popular');
+  //       setMovies(data.results || []);
+  //     } catch (err) {
+  //       setError('Failed to fetch movies');
+  //     }
+  //   };
 
-    fetchMovies();
-  }, []);
+  //   fetchMovies();
+  // }, []);
 
-  if (error) return <p>{error}</p>;
+  // if (error) return <p>{error}</p>;
 
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="index" element={<Home movies={movies} />} />
+          <Route path="/" element={<Home movies={movies} />} />
           <Route path="/movies/:movieId" element={<MovieDetail />} />
-          {/* <Route path="/RegistrationForm" element={<RegistrationForm />} /> */}
-          <Route path="/" element={<RegistrationForm />} />
+          <Route path="/RegistrationForm" element={<RegistrationForm />} />
         </Routes>
       </BrowserRouter>
     </div>
