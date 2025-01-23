@@ -33,4 +33,37 @@
   .movie-details p {
     font-size: 1rem;
   }
+  .recommendations {
+    margin-top: 2rem;
+  }
   
+  .recommendation-list {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto; /* Makes it scrollable horizontally */
+    padding: 1rem 0;
+  }
+  
+  .recommendation-card {
+    flex: 0 0 150px; /* Makes each card compact */
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .recommendation-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .recommendation-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .recommendation-title {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }  
